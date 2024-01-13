@@ -730,3 +730,536 @@ color: white;
         background-color: red;
 
     }
+
+
+
+
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+
+        body::-webkit-scrollbar {
+            display: none;
+          }
+
+body{
+    margin: 0;
+    width: 100%;
+}
+
+
+/* navbar container styles */
+
+
+.header {
+    border-bottom: none;
+
+    font-family: serif;
+    top: 0;
+    left: 0;
+    z-index: 100; 
+    position: fixed;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+
+}
+
+#vh1{
+    background-color: red;
+}
+/* this is for logo  */
+.logo img {
+    
+    width: 50px;
+    height: 50px;
+
+}
+
+
+
+/* logo end */
+
+
+
+/* this is for navigation menu */
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ 
+.navbar li {
+    margin-right: 20px;
+    transition: background-color 0s,border-radius 1s;
+}
+.navbar li:hover{
+    background-color: darkblue;
+
+
+}
+
+.navbar a {
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    
+}
+
+.navbar ul ul {
+    color: white;
+    display: none;
+    position: absolute;
+}
+
+.navbar ul li:hover > ul { 
+
+    display: inherit;
+    font-size: 10px;
+    background-color:darkblue;
+}
+
+.navbar ul ul li a {
+
+    color:white;
+    padding: 10px;
+    font-size: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+/* this is for navigation menu  end*/
+
+
+
+
+
+/* this is for table booking button in the header */
+
+.tablebooking{
+ 
+    margin-right: 20px;
+}
+
+.tablebooking button {
+
+    background-color: black;
+
+
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    /* border-radius: 50%; */
+    transition: background-color 2s,transform 1s ;
+}
+.tablebooking button:hover{
+    transform: scale(1.2);
+    
+}
+
+.tablebooking button img {
+    width: 20px;
+    height:20px;
+}
+
+
+
+/* table booking end */
+
+
+
+
+/* navbar styles end */
+
+
+
+
+
+/* home page text and image container */
+
+.SLIDE {
+    
+    width: 100%;
+    display: flex;
+
+    background-image: url(images/mainbg.jpg);
+    background-size: 100%;
+    height: 250px;
+    color: white;
+    background-repeat: no-repeat;
+}
+
+
+
+.text{
+    width: 100%;
+    height: 300px;
+}
+.imgrotate{
+    width: 100%;
+    margin-top: 60px;
+    height: 300px;
+
+    
+}
+.imgrotate img{
+    margin-left: 4em;
+    margin-top: 50px;
+    width: 140px;
+    height: 140px;
+}
+
+/* for text in home page */
+.text h1{
+
+    text-shadow: 3px 3px 5px red;
+    color:gold;
+padding: 2em;
+    font-size: 24px;
+}
+
+
+/* rotating image p1 is image id */
+
+#p1{ 
+
+    filter: drop-shadow(1px 1px 2px red);
+    margin-top: 0px;
+    animation: rotateImage 20s linear infinite;
+}
+
+
+/* rotating animation */
+
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* home page text and image container end */
+
+
+
+
+/* hand image */
+
+#p2 {
+   display: none;
+}
+
+
+
+
+/* about page */
+
+#about {
+    height: 230px;
+    
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    text-align: center;
+    background-color:black;
+    color: white;
+}
+.aImage{
+    width: 100%;
+}
+.aImage img{
+    width: 100%;
+    height: 230px;
+}
+.atext{
+    font-size: 10px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* menu's container in home page */
+.menutext{
+
+    margin-top: 5px;
+    text-align: center;
+    height: 10px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   justify-content: space-evenly;
+    background-color: white;
+    color: black;
+    background-attachment: fixed;
+
+   width: 100%;
+    height: 400px;
+}
+.menu img{
+    width: 100px;
+    height: 200px;
+}
+
+
+/* veg , desertsand nonveg divs in home page */
+
+
+.Deserts {
+    font-size: 10px;
+
+    filter: drop-shadow(2px 2px 5px red);
+
+    width: 100px;
+    height: 250px;
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    text-align: center;
+
+   
+}
+.non-veg{
+    font-size: 10px;
+
+    filter: drop-shadow(2px 2px 5px red);
+
+    width: 100px;
+    height: 250px;
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    text-align: center;
+
+}
+.veg{
+    font-size: 10px;
+
+    filter: drop-shadow(2px 2px 5px red);
+
+    width: 100px;
+    height: 250px;
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+/* this is for full menu page */
+
+.menu1 {
+  margin-top: 40px;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.veg .nonveg, a{
+    font-size: 10px;
+    text-align: center;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.category {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+
+    text-align: center;
+    width: 100%;
+}
+
+.dish {
+    font-size: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dish:hover {
+    transform: scale(1.05);
+}
+
+.dish img {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+
+
+
+.dish span {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+/* full menu page  end */
+
+
+
+
+
+.timings{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.timage{
+    width: 100%;
+
+}
+.timage img{
+    height: 250px;
+    width: 100%;
+}
+.time{
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+}
+.time p{
+    font-size: 15px;
+}
+
+#one{
+    background-color: green;
+    border-radius: 3px;
+  }
+
+  
+ #two{
+    background-color: orange;
+    border-radius: 3px;
+  }
+
+  
+ #three{
+    background-color: red;
+    border-radius: 3px;
+  }
+   
+
+
+
+
+/* reservation form  */
+
+.form-location {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color:white;
+
+    
+}
+
+
+.fimage img{
+    padding: 0;
+    width: 225px;
+    height: 250px;
+}
+
+.form1{
+    text-align: center;
+
+    width: 100%;
+
+    height: 250px;
+    
+
+}
+
+.form1 h2 {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.form1 table {
+    width: 100%;
+}
+
+.form1 td {
+    padding: 10px;
+}
+
+.form1 input {
+    color: black;
+    background-color: antiquewhite;
+
+    width: 100px;
+    height: 50px;
+
+    box-sizing: border-box;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    transition: transform 1s;
+}
+.form1 input:hover{
+    transform: scale(1.1);
+
+}
+
+.form1 button {
+    background-color: #e44d26;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 2s;
+}
+
+.form1 button:hover {
+    transform: scale(0.8);
+    background-color: #333;
+}
+
+
+
+
+
+
+    }
